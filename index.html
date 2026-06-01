@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grading System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-box">
+        <h2>Student Grading Form</h2>
+        
+        <!--  i created a Simple form -->
+        <form id="gradingForm">
+            <p>
+                <label>Student Name:</label><br>
+                <input type="text" id="nameInput" required>
+            </p>
+            
+            <p>
+                <label>Mark (0-100):</label><br>
+                <input type="number" id="markInput" min="0" max="100" required>
+            </p>
+            
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- then put a Div to show the instant result -->
+        <div id="displayMessage"></div>
+
+        <h3>All Results</h3>
+        <table border="1" id="resultsTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Mark</th>
+                    <th>Result</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- This is where the Table rows will show -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
